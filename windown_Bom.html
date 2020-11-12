@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        giay=1;
+        var int =setTimeout("ingiay()",1000);
+        function ingiay(){
+            document.getElementById("noidung").value=giay;
+            if(giay===60){
+                clearTimeout(int);
+            }
+            else{
+                giay++;
+            }
+            int=setTimeout("ingiay()",1000);
+        }
+    
+    
+    </script>
+</head>
+<body>
+    <form action="idd">
+        <input type="button" id="noidung" size="35">
+    </form>
+</body>
+</html>

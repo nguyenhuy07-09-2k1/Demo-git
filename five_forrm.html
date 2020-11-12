@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="Mon, 24 sep 2003 14/25/27 GTM">
+   
+    <title>Document</title>
+</head>
+<body>
+    <form name="nhap">
+        <table >
+            <tr><td>Mã đăng nhập</td>
+                <td><input type="text" name="ma" value="" size="20"></td>
+            </tr>
+            <td >Mật khẩu</td>
+            <td><input type="password" name="matkhau" value="" size="20"></td>
+            <tr>
+                <td colspan="2" align="right"><input type="submit" name="sm" value="Đăng nhập" maxlength="20"></td>
+               
+            </tr>
+        </table>
+    </form>
+    <br>
+    <form name="nhap">
+        <p><h2 style="font-style: italic; color: blue; font-family: 'Times New Roman', Times, serif;">Nhấn chuột vào "Nam" hoặc "Nữ" để chọn giới tính</h2></p>
+        <input type="radio" name="phai" id="nam"/><label for="nam">Nam</label> <br>
+        <input type="radio" name="phai" id="nu"/><label for="nu">Nữ</label>
+    </form>
+    <br>
+    <select id="monhoc">
+        <option value="1" selected="selected">Môn học</option>
+        <option value="2">Lập trình web html</option>
+        <option value="3">Cấu trức dữ liệu và giải thuật</option>
+        <option value="4">lập trình hướng đối tượng</option>
+    </select>
+    <p><h3 style="color: brown;">Hãy chọn phim mà bạn yêu thích , được phép chọn nhiều phim</h3></p>
+    <select id="phim" size="5" multiple="multiple" style="width:200">
+      
+        <option value="1" selected="selected">Phim</option>
+        <optgroup label="phim chiếu 10h00m">
+        <option value="2">Thập diện mai phục</option>
+        <option value="3">Báu vật hoàng cung</option></optgroup>
+        <optgroup label="phim chiếu 15h00m">
+        <option value="4">Anh hùng nhà bác sĩ</option>
+        <option value="5">Ông bà Smith</option>
+        <option value="6">Mùa đu đủ xanh</option></optgroup>
+    </select>
+    <br>
+    <fieldset style="width:200px; padding-left: 20px; ">
+        <legend>Giới tính</legend>
+        <input type="radio" name="phai" id="nam1"><label for="nam1">Nam</label>
+        <input type="radio" name="phai" id="nu1"><label for="nu1">Nữ</label>
+    </fieldset>
+
+    <div>
+        <form action="nhap">
+            <label id="chao" style="color: aqua;" ></label><br>
+            <input type="button" name="xuat" value="Xuất câu chào" onclick="chao.innerText=prompt('Nhập tên của bạn:','Chào bạn ')">
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action="nhap">
+            <!-- <label id="chao" style="color: aqua;" ></label><br> -->
+            <input type="button" name="chao" value="Xuất câu chào" onclick="alert('Chào bạn, chúc mừng bạn đến với ngôn ngữ lập trình JavaScript.')">
+        </form>
+    </div>
+</body>
+</html>

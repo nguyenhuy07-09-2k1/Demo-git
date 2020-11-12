@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="thuvien.js"></script>
+
+</head>
+<body>
+    <form action="nhap">
+        <div id="cauchao">Chào bạn: </div>
+        Nhập tên mới: <input type="text" name="ten" id="ten" size="30">
+        <p><input type="button" name="mo" value="Thay đổi câu chào"
+            onclick="if(confirm('Bạn đồng ý thay đổi câu chào?'))
+                cauchao.innerText='Chào bạn: '+ten.value;"></p>
+    </form>
+
+</body>
+</html>

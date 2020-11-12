@@ -1,0 +1,30 @@
+.chart_main{
+    /* margin: 36px auto 0 auto ; */
+    padding: 36px 0;
+    height: 320px;
+    background-color: aqua;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: flex-end; */
+}
+
+.chart_layout{
+    width: 60px;
+    color:black;
+    text-align: center;
+    height: var(--bien);
+    background-color: red;
+    align-self: flex-end;
+    animation: growth ease-in 0.5s;
+}
+
+@keyframes growth{
+    from{
+        opacity: 0;
+        height: cacl((var(--bien))-50%);
+    }
+    to{
+        opacity: 1;
+        height: var(--bien);
+    }
+}
