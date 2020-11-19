@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$.get("demo_test.asp", function(data, status){
+alert("Data: " + data + "nStatus: " + status);
+});
+});
+});
+</script>
 </head>
 <body>
-    <ul>aquafina</ul>
-    <ul>hao hoa</ul>
-    <ul>vina cafe pho</ul>
-    <ul>huy day ne</ul>
-    <ul>123</ul>
-    <ul>456</ul>
+
+<button>Send an HTTP GET request to a page and get the result back</button>
+
 </body>
-</html>
